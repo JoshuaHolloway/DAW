@@ -7,5 +7,3 @@
 
 * Version 14.7.36 because this is what is used in the docs:
     * npm install --save tone@14.7.39
-
-<script src="./js/main.js"></script>
