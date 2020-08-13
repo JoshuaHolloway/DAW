@@ -43,6 +43,28 @@
             <div class="menu-bar-text" style="background: cyan;">HELP</div>
         </div>
 
+        <div class="play_controls">
+            <button id="add-row">Add Instrument</button>
+
+            <button id="play_button" class="button">Play</button>
+            <button id="stop_button" class="button">Stop</button>
+
+            <input type="range" id="volume" name="volume" min="0" max="1" step="0.1">
+            <label for="volume">Volume</label>
+
+            <p id="bar">Bar: </p>
+            <p id="beat">Beat: </p>
+            <p id="sixteenth">Sixteenth: </p>
+            <p id="index">Index: </p>
+            <p id="time">Time: </p>
+
+            <label for="bpm-slider"></label>
+            <input type="range" id="bpm-slider" name="bpm-slider" min="10" max="180" value="78" step="1">
+            
+            <span id="bpm-readout">BPM: </span>
+        </div>
+
+
         <div id="r3">
 
             <!-- File-Browser -->
@@ -1786,41 +1808,7 @@
 
     </div>
 
-    <script>
 
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <button id="add-row">Add Instrument</button>
-
-    <button id="play_button" class="button">Play</button>
-    <button id="stop_button" class="button">Stop</button>
-
-    <input type="range" id="volume" name="volume" min="0" max="1" step="0.1">
-    <label for="volume">Volume</label>
-
-    <p id="bar">Bar: </p>
-    <p id="beat">Beat: </p>
-    <p id="sixteenth">Sixteenth: </p>
-    <p id="index">Index: </p>
-    <p id="time">Time: </p>
-
-    <label for="bpm-slider"></label>
-    <input type="range" id="bpm-slider" name="bpm-slider" min="10" max="180" value="78" step="1">
-    
-    <span id="bpm-readout">BPM: </span>
     
 
     <div id="script" class="dev">
