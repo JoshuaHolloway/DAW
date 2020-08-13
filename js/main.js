@@ -488,7 +488,7 @@ class Channel_Rack_TO_REMOVE {
 // let Instruments = [new Instrument('hh_sample.mp3', 0), new Instrument('clap_sample.mp3', 1), new Instrument('bass_sample.mp3', 2)];
 
 class Channel_Rack {
-    instruments = [new Instrument('hh_sample.mp3', 0), new Instrument('clap_sample.mp3', 1), new Instrument('bass_sample.mp3', 2)];
+    instruments = [new Instrument('../assets/hh_sample.mp3', 0), new Instrument('../assets/clap_sample.mp3', 1), new Instrument('../assets/bass_sample.mp3', 2)];
 
     piano_roll_instruments = [new Piano_Roll_Instrument('piano', 0)];
 }

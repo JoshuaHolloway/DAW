@@ -23,35 +23,12 @@ body {
 }
 
 .main-container {
-    background-image: url('ui.png');
+    /* background-image: url('ui.png'); */
 
     height: 99.4vh;
     width: 99.5vw;
 }
 
-#r1 {   
-    height: var(--r1-height);
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: calc(1px + var(--menu-bar-width) + 2*var(--menu-bar-container-padding)) 1fr min-content;   
-}
-#r2 {   
-    height: var(--r2-height);
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: calc(1px + var(--menu-bar-width) + 2*var(--menu-bar-container-padding)) 1fr min-content;   
-}
-#r3 {
-    height: var(--r3-height);
-    width: 100%;
-    /* background: purple; */
-    opacity: var(--debug-opacity);
-
-    display: grid;
-    grid-template-columns: 248px 1fr;
-}
 
 #r3c1 {
     height: 100%;

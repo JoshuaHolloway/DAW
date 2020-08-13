@@ -20,46 +20,27 @@
 
     <div class="main-container">
 
-        
-        <div id="r1">
 
-            <div id="r1c1">
-                <div id="menu-bar">
+        <div id="menu-bar">
 
-                    <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">FILE</button>
-                        <div id="file-dropdown" class="dropdown-content">
-                            <a href="#">Login</a>
-                            <a href="#">Open</a>
-                            <a href="#">Save</a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="menu-bar-text" style="background: orange;">EDIT</div>
-                    <div class="menu-bar-text" style="background: green;">ADD</div>
-                    <div class="menu-bar-text" style="background: yellow;">PATTERNS</div>
-                    <div class="menu-bar-text" style="background: purple;">VIEW</div>
-                    <div class="menu-bar-text" style="background: red;">OPTIONS</div>
-                    <div class="menu-bar-text" style="background: magenta;">TOOLS</div>
-                    <div class="menu-bar-text" style="background: cyan;">HELP</div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">FILE</button>
+                <div id="file-dropdown" class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Open</a>
+                    <a href="#">Save</a>
                 </div>
             </div>
 
-            <div id="r1c2">
-            </div>
 
-        </div>
 
-        <div id="r2">
-
-            <div id="r2c1">
-            </div>
-
-            <div id="r2c2">
-            </div>
-
+            <div class="menu-bar-text" style="background: orange;">EDIT</div>
+            <div class="menu-bar-text" style="background: green;">ADD</div>
+            <div class="menu-bar-text" style="background: yellow;">PATTERNS</div>
+            <div class="menu-bar-text" style="background: purple;">VIEW</div>
+            <div class="menu-bar-text" style="background: red;">OPTIONS</div>
+            <div class="menu-bar-text" style="background: magenta;">TOOLS</div>
+            <div class="menu-bar-text" style="background: cyan;">HELP</div>
         </div>
 
         <div id="r3">
@@ -1806,25 +1787,7 @@
     </div>
 
     <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("file-dropdown").classList.toggle("show");
-        }
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-            }
-        }
     </script>
 
 
@@ -1862,7 +1825,8 @@
 
     <div id="script" class="dev">
         <script src="../node_modules/tone/build/Tone.js"></script>
-        <script src="main.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/file_menu.js"></script>
     </div>
 
 </body>
