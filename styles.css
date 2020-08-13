@@ -1,0 +1,124 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+    --default-track-width: 95vw;
+}
+
+.container-channel-rack {
+    /* margin: 20px;
+    display: grid;
+    grid-template-columns: 200px 2fr 20% 1fr;
+    grid-template-rows: 5rem 2.5rem; */
+    width: fit-content;
+}
+
+.container-song {
+    width: fit-content;
+
+}
+
+.row-channel-rack {
+    display: grid;
+    grid-template-columns: 100px 20px 120px 40px 1fr;
+    
+    /* Use CSS-grid as 1D and add my own row-divs */
+    grid-template-rows: 100px;
+    border: black solid 2px;
+}
+
+.row-song {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    /* grid-template-rows: 100%; */
+
+    width: var(--default-track-width);
+    border: black 10px solid;
+}
+
+.track-title {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 10px green solid;
+}
+
+.track-paint-region {
+
+    height: 100px;
+    background: red;
+    border: 10px blue solid;
+}
+
+.single-pattern {
+    
+}
+
+.el1 {
+    background: rgba(255, 154, 72, 0.5);
+}
+
+.el2 {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.el3 {
+    background: rgba(0, 128, 0, 0.5);
+    /* grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    /* Use CSS-grid as 1D and add my own row-divs */
+    grid-template-rows: 1fr 1fr;
+
+    text-align: center;
+}
+
+.el4 {
+    background: rgba(0, 4, 255, 0.5);
+}
+
+/* Beats go here */
+.el5 {
+    background: rgba(255, 0, 0);
+
+    /* flex on those kids */
+    display: flex;
+}
+
+.button {
+    font-size: 18px;
+    color: black;
+    border: grey 3px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    color: red;
+    background: green;
+    transition: background-color 0.3s ease-in;
+}
+
+.track-name {
+    width: 100%;
+    border: yellow solid 1px;
+}
+
+.load-track {
+    height: 20px;
+    width: 100%;
+    background: red;
+    text-align: center;
+}
+
+.load-track:hover {
+    color: red;
+    background: green;
+    transition: background-color 0.3s ease-in;
+}
