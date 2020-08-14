@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAW | Homepage</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="dist/index.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/channel-rack.css">
+    <link rel="stylesheet" href="css/main-layout.css">
+    
+</head>
+
+<body>
+
+    <div class="main-container">
+
+
+        <div id="menu-bar">
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">FILE</button>
+                <div id="file-dropdown" class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Open</a>
+                    <a href="#">Save</a>
+                </div>
+            </div>
+
+
+
+            <div class="menu-bar-text" style="background: orange;">EDIT</div>
+            <div class="menu-bar-text" style="background: green;">ADD</div>
+            <div class="menu-bar-text" style="background: yellow;">PATTERNS</div>
+            <div class="menu-bar-text" style="background: purple;">VIEW</div>
+            <div class="menu-bar-text" style="background: red;">OPTIONS</div>
+            <div class="menu-bar-text" style="background: magenta;">TOOLS</div>
+            <div class="menu-bar-text" style="background: cyan;">HELP</div>
+        </div>
+
+        <div class="play_controls">
+            <button id="add-row">Add Instrument</button>
+
+            <button id="play_button" class="button">Play</button>
+            <button id="stop_button" class="button">Stop</button>
+
+            <input type="range" id="volume" name="volume" min="0" max="1" step="0.1">
+            <label for="volume">Volume</label>
+
+            <p id="bar">Bar: </p>
+            <p id="beat">Beat: </p>
+            <p id="sixteenth">Sixteenth: </p>
+            <p id="index">Index: </p>
+            <p id="time">Time: </p>
+
+            <label for="bpm-slider"></label>
+            <input type="range" id="bpm-slider" name="bpm-slider" min="10" max="180" value="78" step="1">
+            
+            <span id="bpm-readout">BPM: </span>
+        </div>
+
+
+        <div class="channel-rack-container">
+            <div id="channel-rack">
+                <div id="channel-rack-center">
+
+                    <div class="channel-rack-row">
+                        <div class="channel-rack-col-left">
+                            <span class="light"></span>
+                            <span class="knob"></span>
+                            <span class="knob"></span>
+                            <span class="number">0</span>
+                            <input id="load_0" type="file" accept="audio/*" style="display: none;" />
+                            <input class="name" id="instrument-name-0" type="button" onclick="document.getElementById('load_0').click();">
+                            <span class="on-off"></span>  
+                        </div>
+                        <div class="beats-0">
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>                        
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                        </div>
+                    </div>
+
+                    <div class="channel-rack-row">
+                        <div class="channel-rack-col-left">
+                            <span class="light"></span>
+                            <span class="knob"></span>
+                            <span class="knob"></span>
+                            <span class="number">1</span>
+                            <input id="load_1" type="file" accept="audio/*" style="display: none;" />
+                            <input class="name" id="instrument-name-1" type="button" onclick="document.getElementById('load_1').click();">
+                            <span class="on-off"></span>  
+                        </div>
+                        <div class="beats-1">
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>                        
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                        </div>
+                    </div>
+
+                    <div class="channel-rack-row">
+                        <div class="channel-rack-col-left">
+                            <span class="light"></span>
+                            <span class="knob"></span>
+                            <span class="knob"></span>
+                            <span class="number">2</span>
+                            <input id="load_2" type="file" accept="audio/*" style="display: none;" />
+                            <input class="name" id="instrument-name-2" type="button" onclick="document.getElementById('load_2').click();">
+                            <span class="on-off"></span>  
+                        </div>
+                        <div class="beats-2">
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>
+                            <span class="beat beat-l"></span>                        
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                            <span class="beat beat-r"></span>
+                        </div>
+                    </div>
+
+                    <div class="channel-rack-row">
+                        <div class="channel-rack-col-left">
+                            <span class="light"></span>
+                            <span class="knob"></span>
+                            <span class="knob"></span>
+                            <span class="number">3</span>
+                            <input id="load_3" type="file" accept="audio/*" style="display: none;" />
+                            <input class="name" id="instrument-name-3" type="button" onclick="document.getElementById('load_3').click();">
+                            <span class="on-off"></span>  
+                        </div>
+                        <div class="beats-3">
+                            <span class="beat beat-l metronome"></span>
+                            <span class="beat beat-l metronome"></span>
+                            <span class="beat beat-l metronome"></span>
+                            <span class="beat beat-l metronome"></span>
+                            <span class="beat beat-r metronome"></span>
+                            <span class="beat beat-r metronome"></span>
+                            <span class="beat beat-r metronome"></span>
+                            <span class="beat beat-r metronome"></span>
+                            <span class="beat beat-l metronome"></span>
+                            <span class="beat beat-l metronome"></span>
+                            <span class="beat beat-l metronome"></span>
+                            <span class="beat beat-l metronome"></span>                        
+                            <span class="beat beat-r metronome"></span>
+                            <span class="beat beat-r metronome"></span>
+                            <span class="beat beat-r metronome"></span>
+                            <span class="beat beat-r metronome"></span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+    <div id="script" class="dev">
+        <script src="../node_modules/tone/build/Tone.js"></script>
+        <script src="./js/main-2.js"></script>
+        <script src="./js/file_menu.js"></script>
+    </div>
+
+</body>
+
+</html>
