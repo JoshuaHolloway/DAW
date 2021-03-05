@@ -1,3 +1,5 @@
+const { Tone } = require("tone/build/esm/core/Tone");
+
 // Globals
 let loop;
 let timer = 0;
@@ -166,6 +168,7 @@ class Piano_Roll_Instrument {
 
         for (let i = 0; i < row_length; ++i) {
             this.pattern[0][i] = true;
+            //          y   x
         }
         console.log(this.pattern);
             
@@ -505,6 +508,12 @@ let volume;
 vol_slider.addEventListener('change', () => {
     volume = Number(vol_slider.value);
     console.log('volume = ' + volume + ', type: ' + typeof volume);
+
+    // UPDATE THE ACTUAL VOLUME???
+    console.log('volume: ', volume);
+    // Tone.Volume(volume);
+
+
 });
 
 // TODO: 
